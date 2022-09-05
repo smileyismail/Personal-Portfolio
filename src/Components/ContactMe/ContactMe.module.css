@@ -1,0 +1,80 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact h2 {
+  color: rgb(196, 36, 36);
+  margin-bottom: 2rem;
+  font-weight: light;
+}
+
+.contact form {
+  width: 80%;
+  display: grid;
+  column-gap: 1rem;
+  grid-template-areas:
+    "name email"
+    "subject subject"
+    "message message"
+    "button button";
+}
+
+.contact form input,
+.contact form textarea {
+  background-color: rgba(0, 0, 0, 0.077);
+  font-size: 1.6rem;
+  color: var(--slate);
+  border: 1px solid var(--aqua);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  outline-color: var(--dark-slate);
+}
+
+.contact form input:first-of-type {
+  grid-area: name;
+}
+
+.contact form input[type="email"] {
+  grid-area: email;
+}
+
+.contact form input:nth-of-type(3) {
+  grid-area: subject;
+  width: 100%;
+}
+
+.contact form textarea {
+  grid-area: message;
+  resize: none;
+}
+
+.submitBtn {
+  margin-bottom: 1rem;
+  grid-area: button;
+  text-align: center;
+}
+
+/* for Tablets */
+@media screen and (max-width: 768px) {
+  .contact form {
+    width: 100%;
+  }
+}
+
+/* for Smart Phones  */
+@media screen and (max-width: 480px) {
+  .contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
