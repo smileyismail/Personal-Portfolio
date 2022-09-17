@@ -6,7 +6,8 @@ import React from "react";
 const PROJECTS_DATA = [
   {
     id: 1,
-    name: "Portfolio website",
+    title: "Portfolio website",
+    type: "react",
     description:
       "My personal portfolio website which showcase all of  Me, My Skills, My Work, My Contact Information, etc. ",
     toolsUsed: "React, CSS, JSX",
@@ -16,7 +17,8 @@ const PROJECTS_DATA = [
   },
   {
     id: 2,
-    name: "Mini-Games Studio",
+    title: "Mini-Games Studio",
+    type: "javascript",
     description:
       "A retro game studio where one can enjoy the 90s games. Some games are also integrated with API's and Computer AI",
     toolsUsed: "JavaScript, CSS, HTML",
@@ -26,7 +28,8 @@ const PROJECTS_DATA = [
   },
   {
     id: 3,
-    name: "Expense Tracker",
+    title: "Expense Tracker",
+    type: "react",
     description:
       "An expense tracker where one can track all of their Expenses, Add new Expense and Sort the expenses according to the date. ",
     toolsUsed: "React, CSS, JSX",
@@ -36,7 +39,8 @@ const PROJECTS_DATA = [
   },
   {
     id: 4,
-    name: "Expense Tracker",
+    title: "Expense Tracker",
+    type: "react",
     description:
       "An expense tracker where one can track all of their Expenses, Add new Expense and Sort the expenses according to the date. ",
     toolsUsed: "React, CSS, JSX",
@@ -47,7 +51,8 @@ const PROJECTS_DATA = [
   },
   {
     id: 5,
-    name: "Expense Tracker",
+    title: "Expense Tracker",
+    type: "react",
     description:
       "An expense tracker where one can track all of their Expenses, Add new Expense and Sort the expenses according to the date. ",
     toolsUsed: "React, CSS, JSX",
@@ -58,7 +63,8 @@ const PROJECTS_DATA = [
   },
   {
     id: 6,
-    name: "Expense Tracker",
+    title: "Expense Tracker",
+    type: "react",
     description:
       "An expense tracker where one can track all of their Expenses, Add new Expense and Sort the expenses according to the date. ",
     toolsUsed: "React, CSS, JSX",

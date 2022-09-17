@@ -28,7 +28,7 @@ const Projects = () => {
       </div>
 
       <div className={Styles.bottom}>
-        <h1>{project_data.name}</h1>
+        <h1>{project_data.title}</h1>
         <p>{project_data.description}</p>
 
         <h3>
@@ -55,7 +55,7 @@ const Projects = () => {
         </div>
 
         <div className={Styles.seeMoreBtn}>
-          <Link to="https://www.youtube.com/" className="linkButton">
+          <Link to="moreProjects" className="linkButton">
             More Projects
           </Link>
         </div>
