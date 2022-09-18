@@ -1,9 +1,6 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-// import AllProjects from "./AllProjects";
-// import ReactProjects from "./ReactProjects";
-
 import Styles from "./MoreProjects.module.css";
 
 const MoreProjects = () => {
