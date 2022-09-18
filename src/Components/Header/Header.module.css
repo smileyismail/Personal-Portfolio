@@ -1,6 +1,6 @@
 .header {
-  background-color: var(--navy);
-  padding: 1rem 5rem;
+  background-color: var(--dark-navy);
+  padding: 1.5rem 5rem;
   position: fixed;
   top: 0;
   width: 100vw;

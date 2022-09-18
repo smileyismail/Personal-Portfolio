@@ -1,11 +1,12 @@
 import React from "react";
 import Styles from "./Projects.module.css";
 
-import PROJECTS_DATA from "./ProjectsData";
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
 import { HiCode } from "react-icons/hi";
 import { Link } from "react-router-dom";
+
+import PROJECTS_DATA from "../ProjectsData";
 
 const Projects = () => {
   let projectsList = PROJECTS_DATA.map((project_data) => (

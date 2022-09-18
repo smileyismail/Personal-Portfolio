@@ -8,9 +8,7 @@ import { HiCode } from "react-icons/hi";
 import PROJECTS_DATA from "../Components/ProjectsData";
 
 const AllProjects = () => {
-  let projectsList = PROJECTS_DATA.filter((product) =>
-    product.category.includes("javaScript")
-  ).map((project_data) => (
+  let projectsList = PROJECTS_DATA.map((project_data) => (
     <li className={Styles.list} key={project_data.id}>
       <div className={Styles.top}>
         <div className={Styles.icon}>{project_data.icon}</div>
@@ -47,7 +45,7 @@ const AllProjects = () => {
     <section id="projects" className="section">
       <div className="section_heading">
         <h1>
-          <span>JavaScript Projects</span>
+          <span>All Projects</span>
         </h1>
       </div>
 
