@@ -78,15 +78,6 @@
   padding-top: 0.3rem;
 }
 
-.seeMoreBtn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 /* for Tablets */
 @media screen and (max-width: 768px) {
   .list {
@@ -98,5 +89,8 @@
 @media screen and (max-width: 480px) {
   .list {
     width: 300px;
+  }
+  .heading {
+    margin-top: 3rem;
   }
 }

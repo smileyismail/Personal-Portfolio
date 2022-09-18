@@ -46,6 +46,7 @@ const App = () => {
         <Route path="javaScriptProjects" element={<JavaScriptProjects />} />
         <Route path="otherProjects" element={<OtherProjects />} />
       </Route>
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 };

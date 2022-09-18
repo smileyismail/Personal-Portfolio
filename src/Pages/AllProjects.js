@@ -44,7 +44,7 @@ const AllProjects = () => {
   return (
     <section id="projects" className="section">
       <div className="section_heading">
-        <h1>
+        <h1 className={Styles.heading}>
           <span>All Projects</span>
         </h1>
       </div>

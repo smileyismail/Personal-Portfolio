@@ -7,13 +7,13 @@
   background-color: var(--dark-navy);
 }
 
-.header nav ul {
+.header ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header nav ul li a {
+.header a {
   font-size: 2rem;
   margin: 1rem;
   color: var(--slate);
@@ -21,17 +21,11 @@
   text-align: center;
 }
 
-.header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header nav ul li {
+.header li {
   list-style-type: none;
 }
 
-.header nav ul li a {
+.header a {
   text-decoration: none;
   color: var(--light-slate);
   font-size: 1.5rem;
@@ -43,18 +37,71 @@
   transition: 0.2s ease;
 }
 
-.header nav ul li a:hover {
+.header a:hover {
   background-color: var(--aqua);
   color: var(--dark-navy);
 }
 
-.header nav ul li a:active {
+.header a:active {
   color: var(--aqua);
 }
 
 .active {
   border-bottom: 3px solid var(--aqua);
 }
-/* .header nav ul li a.active {
-  border-bottom: 3px solid var(--aqua);
-} */
+
+.goBack a {
+  font-size: 2rem;
+  margin: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid var(--aqua);
+}
+
+.mobileNav {
+  display: none;
+}
+
+/* for Tablets */
+@media screen and (max-width: 768px) {
+  .desktopNav {
+    display: none;
+  }
+  .header {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .hamBurger {
+    color: var(--light-slate);
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+  .header .hamBurger:active,
+  .header .hamBurger:hover {
+    color: var(--dark-navy);
+    background-color: var(--aqua);
+    border-radius: 8px;
+  }
+  .header .mobileNav {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 6rem;
+    background-color: var(--dark-navy);
+    padding: 3rem;
+    border-radius: 8px;
+  }
+  .header ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .header ul li {
+    font-size: 2rem;
+  }
+}
