@@ -1,8 +1,9 @@
 import React from "react";
 import Styles from "./Hero.module.css";
 
+import Resume from "../../assets/Resume.pdf";
+
 import heroPic from "../../assets/heroPic.gif";
-// import { FiDownload } from "react-icons/fi";
 
 const Hero = () => {
   return (
@@ -23,7 +24,10 @@ const Hero = () => {
           </p>
 
           <div className={Styles.buttons}>
-            <button className="button">Resume</button>
+            <a href={Resume} download className="button">
+              Resume
+            </a>
+
             <a href="#contact" className="linkButton">
               Message Me
             </a>
