@@ -6,6 +6,8 @@ import { MdOutlineLocalMovies } from "react-icons/md";
 import { RiNewspaperLine } from "react-icons/ri";
 import { BsCart4 } from "react-icons/bs";
 import { FaCalculator } from "react-icons/fa";
+import { CgGlassAlt } from "react-icons/cg";
+import { CgMenuGridR } from "react-icons/cg";
 
 const PROJECTS_DATA = [
   {
@@ -100,6 +102,30 @@ const PROJECTS_DATA = [
 
     githubLink: "https://github.com/smileyismail/Calculator",
     liveLink: "https://smiley-calculator.netlify.app/",
+  },
+  {
+    id: 9,
+    title: "Drink Water Tracker",
+    category: "others",
+    description:
+      "A web application that can help you track the amount of water to drink in a day with cool animations.",
+    toolsUsed: "HTML, CSS, JavaScript",
+    icon: <CgGlassAlt />,
+
+    githubLink: "https://github.com/smileyismail/Drink-Water-Tracker",
+    liveLink: "https://smiley-drink-water-tracker.netlify.app/",
+  },
+  {
+    id: 10,
+    title: "Hover Board",
+    category: "others",
+    description:
+      "A cool animation with multiple colors and different effects will occur when you hover on it.",
+    toolsUsed: "HTML, CSS, JavaScript",
+    icon: <CgMenuGridR />,
+
+    githubLink: "https://github.com/smileyismail/Hover-Board",
+    liveLink: "https://smiley-hover-board.netlify.app/",
   },
 ];
 
