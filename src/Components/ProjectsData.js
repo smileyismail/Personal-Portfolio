@@ -8,6 +8,7 @@ import { BsCart4 } from "react-icons/bs";
 import { FaCalculator } from "react-icons/fa";
 import { CgGlassAlt } from "react-icons/cg";
 import { CgMenuGridR } from "react-icons/cg";
+import { AiFillHtml5 } from "react-icons/ai";
 
 const PROJECTS_DATA = [
   {
@@ -126,6 +127,18 @@ const PROJECTS_DATA = [
 
     githubLink: "https://github.com/smileyismail/Hover-Board",
     liveLink: "https://smiley-hover-board.netlify.app/",
+  },
+  {
+    id: 11,
+    title: "Figma to HTML",
+    category: "others",
+    description:
+      "Converted a Figma full website Design to HTML. The Design is also responsive.",
+    toolsUsed: "HTML, CSS, JavaScript",
+    icon: <AiFillHtml5 />,
+
+    githubLink: "https://github.com/smileyismail/Figma-to-HTML",
+    liveLink: "https://smiley-figma-to-html.netlify.app/",
   },
 ];
 
