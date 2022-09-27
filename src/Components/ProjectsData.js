@@ -15,6 +15,7 @@ const PROJECTS_DATA = [
     id: 1,
     title: "Portfolio website",
     category: "react",
+    showOnHome: false,
     description:
       "My personal portfolio website which showcase all of  Me, My Skills, My Work, My Contact Information, etc. ",
     toolsUsed: "React, CSS, JSX",
@@ -26,6 +27,8 @@ const PROJECTS_DATA = [
     id: 2,
     title: "Mini-Games Studio",
     category: "javaScript",
+    showOnHome: true,
+
     description:
       "A retro game studio where one can enjoy the 90s games. Some games are also integrated with API's and Computer AI",
     toolsUsed: "HTML, CSS, JavaScript",
@@ -37,6 +40,8 @@ const PROJECTS_DATA = [
     id: 3,
     title: "Expense Tracker",
     category: "react",
+    showOnHome: true,
+
     description:
       "An expense tracker where one can track all of their Expenses, Add new Expense and Sort the expenses according to the date. ",
     toolsUsed: "React, CSS, JSX",
@@ -48,6 +53,8 @@ const PROJECTS_DATA = [
     id: 4,
     title: "Stopwatch and Clock",
     category: "javaScript",
+    showOnHome: true,
+
     description:
       "A Application with a functionality of both stopwatch and a clock. The design of the application is Spectacular. ",
     toolsUsed: "HTML, CSS, JavaScript, jQuery ",
@@ -60,6 +67,8 @@ const PROJECTS_DATA = [
     id: 5,
     title: "Movies Palace",
     category: "javaScript",
+    showOnHome: false,
+
     description:
       "A website where you can find latest movies with details along with their ratings. The application is connected to a API so that i fetches latest Movies all the time.",
     toolsUsed: "HTML, CSS, JavaScript",
@@ -71,6 +80,8 @@ const PROJECTS_DATA = [
   {
     id: 6,
     title: "Resume Builder",
+    showOnHome: true,
+
     category: "react",
     description:
       "An amazing Resume Builder that can create Modern Resumes with spectacular Templates.",
@@ -84,6 +95,8 @@ const PROJECTS_DATA = [
     id: 7,
     title: "E-Commerce Store",
     category: "react",
+    showOnHome: true,
+
     description:
       "This is an E-Commerce Store with cart option and the can be filtered by category. We can also search products by their names.",
     toolsUsed: "React, CSS, JSX",
@@ -96,6 +109,8 @@ const PROJECTS_DATA = [
     id: 8,
     title: "Calculator",
     category: "javaScript",
+    showOnHome: false,
+
     description:
       "A calculator that can be used to perform all the mathematical operations.",
     toolsUsed: "HTML, CSS, JavaScript",
@@ -108,6 +123,8 @@ const PROJECTS_DATA = [
     id: 9,
     title: "Drink Water Tracker",
     category: "others",
+    showOnHome: false,
+
     description:
       "A web application that can help you track the amount of water to drink in a day with cool animations.",
     toolsUsed: "HTML, CSS, JavaScript",
@@ -120,6 +137,8 @@ const PROJECTS_DATA = [
     id: 10,
     title: "Hover Board",
     category: "others",
+    showOnHome: false,
+
     description:
       "A cool animation with multiple colors and different effects will occur when you hover on it.",
     toolsUsed: "HTML, CSS, JavaScript",
@@ -132,6 +151,8 @@ const PROJECTS_DATA = [
     id: 11,
     title: "Figma to HTML",
     category: "others",
+    showOnHome: true,
+
     description:
       "Converted a Figma full website Design to HTML. The Design is also responsive.",
     toolsUsed: "HTML, CSS, JavaScript",

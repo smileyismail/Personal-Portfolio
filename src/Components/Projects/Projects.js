@@ -9,38 +9,44 @@ import { Link } from "react-router-dom";
 import PROJECTS_DATA from "../ProjectsData";
 
 const Projects = () => {
-  let projectsList = PROJECTS_DATA.map((project_data) => (
-    <li className={Styles.list} key={project_data.id}>
-      <div className={Styles.top}>
-        <div className={Styles.icon}>{project_data.icon}</div>
+  let projectsList = PROJECTS_DATA.filter((product) => product.showOnHome).map(
+    (project_data) => (
+      <li className={Styles.list} key={project_data.id}>
+        <div className={Styles.top}>
+          <div className={Styles.icon}>{project_data.icon}</div>
 
-        <div className={Styles.links}>
-          <a
-            href={project_data.githubLink}
-            target="github"
-            title="View Source Code"
-          >
-            <FiGithub />
-          </a>
-          <a href={project_data.liveLink} target="netlify" title="Live Preview">
-            <FiExternalLink />
-          </a>
+          <div className={Styles.links}>
+            <a
+              href={project_data.githubLink}
+              target="github"
+              title="View Source Code"
+            >
+              <FiGithub />
+            </a>
+            <a
+              href={project_data.liveLink}
+              target="netlify"
+              title="Live Preview"
+            >
+              <FiExternalLink />
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div className={Styles.bottom}>
-        <h1>{project_data.title}</h1>
-        <p>{project_data.description}</p>
+        <div className={Styles.bottom}>
+          <h1>{project_data.title}</h1>
+          <p>{project_data.description}</p>
 
-        <h3>
-          <span>
-            <HiCode />
-          </span>
-          {project_data.toolsUsed}
-        </h3>
-      </div>
-    </li>
-  ));
+          <h3>
+            <span>
+              <HiCode />
+            </span>
+            {project_data.toolsUsed}
+          </h3>
+        </div>
+      </li>
+    )
+  );
 
   return (
     <section id="projects" className="section">
