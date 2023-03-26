@@ -1,12 +1,12 @@
 import { MdAttachMoney } from "react-icons/md";
 import { CgGames } from "react-icons/cg";
-import { CgProfile, CgWebsite, CgIfDesign } from "react-icons/cg";
+import { CgWebsite, CgIfDesign } from "react-icons/cg";
 import { GiClockwork } from "react-icons/gi";
 import { MdOutlineLocalMovies } from "react-icons/md";
 import { RiNewspaperLine } from "react-icons/ri";
 import { BsCart4 } from "react-icons/bs";
-import { FaCalculator } from "react-icons/fa";
-import { CgGlassAlt } from "react-icons/cg";
+// import { FaCalculator } from "react-icons/fa";
+// import { CgGlassAlt } from "react-icons/cg";
 import { CgMenuGridR } from "react-icons/cg";
 import { SiJavascript } from "react-icons/si";
 

@@ -3,8 +3,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./Components/Header/Header";
 
-import SocialMedia from "./Components/Social/SocialMedia";
-import SocialEmail from "./Components/Social/SocialEmail";
+// import SocialMedia from "./Components/Social/SocialMedia";
+// import SocialEmail from "./Components/Social/SocialEmail";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
