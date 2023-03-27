@@ -67,8 +67,9 @@ const About = () => {
           </p>
         </div>
 
-        <div className="w-80">
+        <div className="w-80 relative">
           <img src={aboutPic} alt="Syed Ismailuddin" />
+          <div className="absolute inset-0 bg-accent opacity-50 hover:opacity-0 duration-300"></div>
         </div>
       </div>
     </section>

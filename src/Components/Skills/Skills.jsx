@@ -2,7 +2,7 @@ import React from "react";
 
 import { skills, tools, practices } from "../../data/skills";
 
-// import { AiFillStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 
 const Skills = () => {
   return (

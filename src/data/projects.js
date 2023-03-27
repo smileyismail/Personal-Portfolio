@@ -1,12 +1,10 @@
-import { MdAttachMoney } from "react-icons/md";
+import { MdAttachMoney, MdFastfood } from "react-icons/md";
 import { CgGames } from "react-icons/cg";
 import { CgWebsite, CgIfDesign } from "react-icons/cg";
 import { GiClockwork } from "react-icons/gi";
 import { MdOutlineLocalMovies } from "react-icons/md";
 import { RiNewspaperLine } from "react-icons/ri";
 import { BsCart4 } from "react-icons/bs";
-// import { FaCalculator } from "react-icons/fa";
-// import { CgGlassAlt } from "react-icons/cg";
 import { CgMenuGridR } from "react-icons/cg";
 import { SiJavascript } from "react-icons/si";
 
@@ -20,6 +18,17 @@ const projects = [
     icon: <MdAttachMoney />,
     githubLink: "https://github.com/smileyismail/Pennywise",
     liveLink: "https://pennywisee.netlify.app/",
+  },
+
+  {
+    id: 9,
+    title: "Rasoi House",
+    description:
+      "A food delivery app that features authentication and a cart system, as well as different animations for a sleek UI.",
+    toolsUsed: "React, Firebase, Tailwind CSS",
+    icon: <MdFastfood />,
+    githubLink: "https://github.com/smileyismail/Rasoi-House",
+    liveLink: "https://rasoi-housee.netlify.app/",
   },
 
   {
@@ -69,16 +78,6 @@ const projects = [
   },
 
   {
-    id: 6,
-    title: "Cartway",
-    description:
-      "This is an E-Commerce Store with cart option and it can also be filtered by category. We can also search products by their names.",
-    toolsUsed: "React, Tailwind Css",
-    icon: <BsCart4 />,
-    githubLink: "https://github.com/smileyismail/Cartway",
-    liveLink: "https://cartway.netlify.app/",
-  },
-  {
     id: 7,
     title: "Javascript Projects",
     description:
@@ -100,28 +99,26 @@ const projects = [
     liveLink: "https://design-projects.netlify.app/",
   },
 
-  // updated end
-
   {
-    id: 9,
-    title: "Stopwatch and Clock",
+    id: 6,
+    title: "Cartway",
     description:
-      "A Application with a functionality of both stopwatch and a clock. The design of the application is Spectacular. ",
-    toolsUsed: "HTML, CSS, JavaScript, jQuery ",
-    icon: <GiClockwork />,
-    githubLink: "https://github.com/smileyismail/Stopwatch-and-Clock",
-    liveLink: "https://smiley-stopwatch-clock.netlify.app/",
+      "This is an E-Commerce Store with cart option and it can also be filtered by category. We can also search products by their names.",
+    toolsUsed: "React, Tailwind Css",
+    icon: <BsCart4 />,
+    githubLink: "https://github.com/smileyismail/Cartway",
+    liveLink: "https://cartway.netlify.app/",
   },
 
   {
     id: 10,
-    title: "Resume Builder",
+    title: "Resume Wizard",
     description:
-      "An amazing Resume Builder that can create Modern Resumes with spectacular Templates.",
-    toolsUsed: "React, CSS, JSX",
+      "An amazing Resume Builder that takes all your information and creates Modern Resumes with spectacular Templates.",
+    toolsUsed: "React, Bootstrap",
     icon: <RiNewspaperLine />,
-    githubLink: "https://github.com/smileyismail/Resume-Builder",
-    liveLink: "https://smiley-resume-builder.netlify.app/",
+    githubLink: "https://github.com/smileyismail/Resume-Wizard",
+    liveLink: "https://resume-wizard.netlify.app/editor",
   },
 
   {
@@ -131,8 +128,9 @@ const projects = [
       "A cool animation with multiple colors and different effects will occur when you hover on it.",
     toolsUsed: "HTML, CSS, JavaScript",
     icon: <CgMenuGridR />,
-    githubLink: "https://github.com/smileyismail/Hover-Board",
-    liveLink: "https://smiley-hover-board.netlify.app/",
+    githubLink:
+      "https://github.com/smileyismail/Javascript-Projects/tree/master/13_HoverBoard",
+    liveLink: "https://javascript-projectss.netlify.app/13_hoverboard/",
   },
 ];
 

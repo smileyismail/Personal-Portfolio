@@ -12,7 +12,8 @@
   font-family: "Inter", sans-serif;
 }
 
-body,html{
+body,
+html {
   scroll-behavior: smooth;
 }
 
@@ -32,7 +33,7 @@ body,html{
   padding-top: 4rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
@@ -69,6 +70,11 @@ p,
 span {
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
+}
+
+textarea,
+input:focus {
+  outline: none;
 }
 
 /* for Tablets */

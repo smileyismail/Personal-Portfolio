@@ -9,9 +9,9 @@ const navLinks = [
   { id: 1, text: "Home", icon: <IoMdHome />, path: "#home" },
   { id: 2, text: "About", icon: <BsPersonCircle />, path: "#about" },
   { id: 3, text: "Skills", icon: <GoTools />, path: "#skills" },
-  { id: 4, text: "Experience", icon: <MdWork />, path: "#experience" },
+  { id: 4, text: "Works", icon: <MdWork />, path: "#works" },
   { id: 5, text: "Projects", icon: <AiFillProject />, path: "#projects" },
-  { id: 6, text: "Contacts", icon: <MdEmail />, path: "#contact" },
+  { id: 6, text: "Contact", icon: <MdEmail />, path: "#contact" },
 ];
 
 export default navLinks;

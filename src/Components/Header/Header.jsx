@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed top-0 hidden sm:flex z-50  justify-center items-center w-screen ${
+        className={`fixed top-0 px-4 hidden sm:flex z-50  justify-center items-center w-screen ${
           navBgColor ? "bg-secondary" : "bg-primary"
         } transition-all duration-500`}
       >

@@ -3,13 +3,13 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./Components/Header/Header";
 
-// import SocialMedia from "./Components/Social/SocialMedia";
-// import SocialEmail from "./Components/Social/SocialEmail";
+import SocialMedia from "./Components/Social/SocialMedia";
+import SocialEmail from "./Components/Social/SocialEmail";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
-import ContactMe from "./Components/ContactMe/ContactMe";
+import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Works from "./Components/Works/Works";
 
@@ -23,14 +23,14 @@ const App = () => {
             path="/"
             element={
               <>
-                {/* <SocialMedia /> */}
-                {/* <SocialEmail /> */}
+                <SocialMedia />
+                <SocialEmail />
                 <Hero />
                 <About />
                 <Skills />
                 <Works />
                 <Projects />
-                <ContactMe />
+                <Contact />
                 <Footer />
               </>
             }

@@ -1,5 +1,4 @@
 import React from "react";
-import Styles from "./Footer.module.css";
 
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
@@ -9,12 +8,13 @@ import { FiFacebook } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <section id="contact" className={Styles.footer}>
-      <div className={Styles.social}>
+    <section className="flex justify-center items-center flex-col p-4 gap-4 bg-secondary w-screen">
+      <div className="flex gap-4 text-xl">
         <a
           href="https://github.com/smileyismail"
           target="github"
           title="Github"
+          className="hover:text-accent duration-200"
         >
           <FiGithub />
         </a>
@@ -22,6 +22,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/syed-ismailuddin/"
           target="linkedin"
           title="Linkedin"
+          className="hover:text-accent duration-200"
         >
           <FiLinkedin />
         </a>
@@ -29,6 +30,7 @@ const Footer = () => {
           href="https://www.instagram.com/smiley__ismail/"
           target="instagram"
           title="Instagram"
+          className="hover:text-accent duration-200"
         >
           <FiInstagram />
         </a>
@@ -36,6 +38,7 @@ const Footer = () => {
           href="https://twitter.com/smiley__ismail"
           target="twitter"
           title="Twitter"
+          className="hover:text-accent duration-200"
         >
           <FiTwitter />
         </a>
@@ -43,12 +46,15 @@ const Footer = () => {
           href="https://www.facebook.com/ismail.uddin.908/"
           target="facebook"
           title="Facebook"
+          className="hover:text-accent duration-200"
         >
           <FiFacebook />
         </a>
       </div>
 
-      <p>Copyright © Syed Ismailuddin 2021 All Rights Reserved</p>
+      <p className="text-sm">
+        Copyright © Syed Ismailuddin 2021 All Rights Reserved
+      </p>
     </section>
   );
 };
