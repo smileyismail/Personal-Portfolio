@@ -26,7 +26,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="mt-8">
+        <div className="mt-10">
           <h2 className="text-2xl">
             Some of the Tools and Practices I use in my development are:
           </h2>

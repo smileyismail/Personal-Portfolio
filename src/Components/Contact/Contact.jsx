@@ -76,7 +76,7 @@ const Contact = () => {
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="w-full flex flex-col gap-6 my-auto"
+        className="w-full max-w-4xl flex flex-col gap-6 my-auto"
       >
         <div className="flex gap-6">
           <input
@@ -135,7 +135,7 @@ const Contact = () => {
         <div className="flex justify-center mt-10">
           <button
             type="submit"
-            className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56"
+            className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56 duration-200"
           >
             Send Message
           </button>

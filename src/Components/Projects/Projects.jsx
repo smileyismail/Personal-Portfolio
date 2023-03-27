@@ -22,7 +22,7 @@ const Projects = () => {
           {projects.slice(0, viewMore ? projects.length : 6).map((project) => (
             <li
               key={project.id}
-              className="bg-secondary rounded-xl p-4 w-72 h-72 flex flex-col border-[0.1px] border-accent"
+              className="relative bg-secondary rounded-xl p-4 w-72 h-72 flex flex-col border-[0.1px] border-accent group"
             >
               <div className="flex justify-center items-center gap-2 mb-4">
                 <div className="flex-1 text-5xl text-accent">
@@ -32,7 +32,7 @@ const Projects = () => {
                   href={project.githubLink}
                   target="github"
                   title="View Source Code"
-                  className="text-xl hover:text-accent"
+                  className="text-xl hover:text-accent group-hover:scale-110 duration-200"
                 >
                   <FiGithub />
                 </a>
@@ -40,13 +40,15 @@ const Projects = () => {
                   href={project.liveLink}
                   target="_bla"
                   title="Live Preview"
-                  className="text-xl hover:text-accent"
+                  className="text-xl hover:text-accent group-hover:scale-110 duration-200"
                 >
                   <FiExternalLink />
                 </a>
               </div>
 
-              <h1 className="font-semibold text-xl mb-1">{project.title}</h1>
+              <h1 className="font-semibold text-xl mb-1 group-hover:scale-110 group-hover:text-accent duration-200 origin-bottom-left">
+                {project.title}
+              </h1>
 
               <p className="flex-1 text-sm">{project.description}</p>
 
@@ -60,7 +62,7 @@ const Projects = () => {
 
         <div className="flex justify-center mt-10">
           <button
-            className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56"
+            className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56 duration-200"
             onClick={() => setViewMore((prevState) => !prevState)}
           >
             {viewMore ? "View Less" : "View More"}

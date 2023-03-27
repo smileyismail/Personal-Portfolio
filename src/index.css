@@ -76,6 +76,9 @@ textarea,
 input:focus {
   outline: none;
 }
+.verticalText {
+  writing-mode: vertical-lr;
+}
 
 /* for Tablets */
 @media screen and (max-width: 768px) {

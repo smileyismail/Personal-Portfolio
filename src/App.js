@@ -15,9 +15,9 @@ import Works from "./Components/Works/Works";
 
 const App = () => {
   return (
-    <div className="bg-primary text-customWhite">
+    <div className="bg-primary text-customText">
       <Header />
-      <main className="w-[80vw] mx-auto flex flex-col justify-center items-center gap-10">
+      <main className="w-[80vw] mx-auto flex flex-col justify-center items-center">
         <Routes>
           <Route
             path="/"
