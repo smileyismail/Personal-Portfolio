@@ -1,7 +1,6 @@
 import { MdAttachMoney, MdFastfood } from "react-icons/md";
 import { CgGames } from "react-icons/cg";
 import { CgWebsite, CgIfDesign } from "react-icons/cg";
-import { GiClockwork } from "react-icons/gi";
 import { MdOutlineLocalMovies } from "react-icons/md";
 import { RiNewspaperLine } from "react-icons/ri";
 import { BsCart4 } from "react-icons/bs";
