@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
@@ -20,9 +21,12 @@ const Projects = () => {
       <div className="my-auto">
         <ul className="flex flex-wrap justify-center items-center gap-6">
           {projects.slice(0, viewMore ? projects.length : 6).map((project) => (
-            <li
+            <motion.li
               key={project.id}
               className="relative bg-secondary rounded-xl p-4 w-72 h-72 flex flex-col border-[0.1px] border-accent group"
+              initial={{ y: 300, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.1 + project.id / 10, duration: 0.3 }}
             >
               <div className="flex justify-center items-center gap-2 mb-4">
                 <div className="flex-1 text-5xl text-accent">
@@ -56,7 +60,7 @@ const Projects = () => {
                 <HiCode className="text-accent" />
                 {project.toolsUsed}
               </p>
-            </li>
+            </motion.li>
           ))}
         </ul>
 

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import Resume from "../../assets/Resume.pdf";
 
 import heroPic from "../../assets/heroPic.gif";
@@ -9,10 +9,38 @@ const Hero = () => {
     <section id="home" className="section">
       <div className="flex justify-between items-center my-auto">
         <div className="max-w-[60%] flex flex-col gap-6">
-          <h3 className="text-5xl">Hello World,</h3>
-          <h4 className="text-2xl">My name is,</h4>
-          <h1 className="text-6xl font-bold">Syed Ismailuddin.</h1>
-          <h2 className="text-xl">I Write Code for Internet. </h2>
+          <motion.h3
+            className="text-5xl"
+            initial={{ x: -300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0, duration: 0.5 }}
+          >
+            Hello World,
+          </motion.h3>
+          <motion.h4
+            className="text-2xl"
+            initial={{ x: -300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
+            My name is,
+          </motion.h4>
+          <motion.h1
+            className="text-6xl font-bold"
+            initial={{ x: -300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
+          >
+            Syed Ismailuddin.
+          </motion.h1>
+          <motion.h2
+            className="text-xl"
+            initial={{ x: -300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 1.2, duration: 0.5 }}
+          >
+            I Write Code for Internet.
+          </motion.h2>
           <p className="text-lg">
             Front-End Developer with a strong Foundation in Technology and
             Frameworks of today's Standards like
