@@ -1,8 +1,22 @@
 import React from "react";
 
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
 import aboutPic from "../../assets/aboutPic.jpg";
 
+const infoVariants = {
+  visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+  hidden: { x: "-100vw", opacity: 0 },
+};
+const imgVariants = {
+  visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+  hidden: { x: "100vw", opacity: 0 },
+};
+
 const About = () => {
+  const { ref, inView } = useInView();
+
   return (
     <section id="about" className="section">
       <div className="section_heading">
@@ -11,8 +25,15 @@ const About = () => {
         <div className="bg-accent"></div>
       </div>
 
-      <div className="flex justify-between items-center gap-8 flex-col-reverse lg:flex-row my-auto">
-        <div className="w-[100%] lg:max-w-[70%] text-lg  text-start">
+      <div
+        ref={ref}
+        className="flex justify-between items-center gap-8 flex-col-reverse lg:flex-row my-auto"
+      >
+        <motion.div
+          className="w-[100%] lg:max-w-[70%] text-lg  text-start"
+          variants={infoVariants}
+          animate={inView ? "visible" : "hidden"}
+        >
           <p>
             Howdy, I am Syed Ismailuddin I'm a{" "}
             <span className="text-accent font-semibold">
@@ -65,12 +86,16 @@ const About = () => {
             </span>
             .
           </p>
-        </div>
+        </motion.div>
 
-        <div className="w-80 relative">
+        <motion.div
+          className="w-80 relative"
+          variants={imgVariants}
+          animate={inView ? "visible" : "hidden"}
+        >
           <img src={aboutPic} alt="Syed Ismailuddin" />
           <div className="absolute inset-0 bg-accent opacity-50 hover:opacity-0 duration-300"></div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

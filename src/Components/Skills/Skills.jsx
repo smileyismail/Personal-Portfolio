@@ -1,8 +1,13 @@
 import React from "react";
 
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
 import { skills, tools, practices } from "../../data/skills";
 
 const Skills = () => {
+  const { ref, inView } = useInView();
+
   return (
     <section id="skills" className="section">
       <div className="section_heading">
@@ -12,15 +17,21 @@ const Skills = () => {
       </div>
 
       <div className="w-full my-auto">
-        <div className="grid justify-center items-center flex-wrap grid-cols-2 gap-10">
+        <div
+          ref={ref}
+          className="grid justify-center items-center flex-wrap grid-cols-2 gap-10"
+        >
           {skills.map((skill) => (
             <div key={skill.id}>
               <p>{skill.name}</p>
               <div className="bg-secondary my-1">
-                <div
+                <motion.div
                   className={`bg-accent h-2 rounded-xl`}
-                  style={{ width: `${skill.progress}%` }}
-                ></div>
+                  animate={
+                    inView ? { width: skill.progress + "%" } : { width: 0 }
+                  }
+                  transition={{ duration: 1 }}
+                ></motion.div>
               </div>
             </div>
           ))}
