@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Resume from "../../assets/Resume.pdf";
 
-import heroPic from "../../assets/heroPic.gif";
+import heroGif from "../../assets/heroGif.gif";
 
 const Hero = () => {
   return (
@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start gap-7 z-10">
           <div className="w-full h-full flex justify-center items-start md:hidden max-h-[40vh]  overflow-hidden object-fill">
             <img
-              src={heroPic}
+              src={heroGif}
               alt="HeroAvatar"
               className="w-full h-full object-cover"
             />
@@ -74,9 +74,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden md:block h-[40vh] md:h-[90vh] overflow-hidden border-2 object-cover">
+        <div className="hidden md:block h-[40vh] md:h-[90vh] overflow-hidden object-cover">
           <img
-            src={heroPic}
+            src={heroGif}
             alt="HeroAvatar"
             className="w-full h-full object-contain"
           />
