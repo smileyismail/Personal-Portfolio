@@ -53,13 +53,13 @@ const Hero = () => {
 
           <div>
             <a href={Resume} download>
-              <button className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56 mr-4 duration-100 hover:shadow-md hover:shadow-accent">
+              <button className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56 mr-4 duration-200 hover:drop-shadow-2xl">
                 Resume
               </button>
             </a>
 
             <a href="#contact">
-              <button className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56 duration-100 hover:shadow-md hover:shadow-accent">
+              <button className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56 duration-200 hover:drop-shadow-2xl">
                 Message Me
               </button>
             </a>
