@@ -6,9 +6,11 @@ import { FiExternalLink } from "react-icons/fi";
 import { HiCode } from "react-icons/hi";
 
 import projects from "../../data/projects";
+import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
   const [viewMore, setViewMore] = useState(false);
+  const { ref, inView } = useInView();
 
   return (
     <section id="projects" className="section">
@@ -18,14 +20,14 @@ const Projects = () => {
         <div className="bg-accent"></div>
       </div>
 
-      <div className="my-auto">
+      <div ref={ref} className="my-auto">
         <ul className="flex flex-wrap justify-center items-center gap-6">
           {projects.slice(0, viewMore ? projects.length : 6).map((project) => (
             <motion.li
               key={project.id}
               className="relative bg-secondary rounded-xl p-4 w-72 h-72 flex flex-col border-[0.1px] border-accent group"
               initial={{ y: 300, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              animate={inView ? { y: 0, opacity: 1 } : { y: 300, opacity: 0 }}
               transition={{ delay: 0.1 + project.id / 10, duration: 0.3 }}
             >
               <div className="flex justify-center items-center gap-2 mb-4">
