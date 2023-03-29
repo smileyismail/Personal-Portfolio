@@ -43,16 +43,20 @@ const Works = () => {
               />
             </div>
             <div className="whitespace-pre">
-              <h2 className="text-3xl font-semibold mb-1">Dave Brother's </h2>
-              <h5 className="text-lg">React JS Developer (Internship)</h5>
-              <h6 className="text-sm mb-1 opacity-50 group-hover:opacity-100 duration-300">
+              <h2 className="text-2xl sm:text-3xl font-semibold mb-1">
+                Dave Brother's
+              </h2>
+              <h5 className="text-md sm:text-lg">
+                React JS Developer (Internship)
+              </h5>
+              <h6 className="text-xs sm:text-sm mb-1 opacity-50 group-hover:opacity-100 duration-300">
                 (November 2022 - March 2023)
               </h6>
             </div>
           </div>
 
           <ol className="relative border-l border-secondary ml-8">
-            <li className="ml-4">
+            <li className="ml-4 text-sm sm:text-base">
               <div className="absolute w-3 h-3 bg-accent rounded-full mt-1.5 -left-1.5"></div>
               <p className="mb-4  text-customWhite">
                 Developed and maintained multiple applications using React.js
@@ -93,16 +97,20 @@ const Works = () => {
               />
             </div>
             <div className="whitespace-pre">
-              <h2 className="text-3xl font-semibold mb-1">V Cube Solutions</h2>
-              <h5 className="text-lg">Front-End Developer (Contract)</h5>
-              <h6 className="text-sm mb-1 opacity-50 group-hover:opacity-100 duration-300">
+              <h2 className="text-2xl sm:text-3xl font-semibold mb-1">
+                V Cube Solutions
+              </h2>
+              <h5 className="text-md sm:text-lg">
+                Front-End Developer (Contract)
+              </h5>
+              <h6 className="text-xs sm:text-sm mb-1 opacity-50 group-hover:opacity-100 duration-300">
                 (October 2021 - January 2022)
               </h6>
             </div>
           </div>
 
           <ol className="relative border-l border-secondary ml-8">
-            <li className="ml-4">
+            <li className="ml-4 text-sm sm:text-base">
               <div className="absolute w-3 h-3 bg-accent rounded-full mt-1.5 -left-1.5"></div>
               <p className="mb-4  text-customWhite">
                 Worked on the frontend part of full-stack projects that were

@@ -33,7 +33,7 @@ const App = () => {
       {loading ? (
         <div className="w-screen h-screen flex justify-center items-center">
           <BounceLoader
-            color={"#00ADB5"}
+            color={"#05668D"}
             loading={loading}
             size={150}
             aria-label="Loading Spinner"

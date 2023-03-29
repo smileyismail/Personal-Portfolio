@@ -66,9 +66,9 @@ const Projects = () => {
           ))}
         </ul>
 
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-16">
           <button
-            className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56 duration-200 hover:drop-shadow-2xl"
+            className="border-2 border-accent hover:bg-secondary p-2 sm:p-4 text-lg sm:text-xl font-semibold rounded-xl w-40 sm:w-56 duration-200 hover:drop-shadow-2xl"
             onClick={() => setViewMore((prevState) => !prevState)}
           >
             {viewMore ? "View Less" : "View More"}

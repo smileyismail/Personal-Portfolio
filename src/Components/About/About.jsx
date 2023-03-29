@@ -30,7 +30,7 @@ const About = () => {
         className="flex justify-between items-center gap-8 flex-col-reverse lg:flex-row my-auto"
       >
         <motion.div
-          className="w-[100%] lg:max-w-[70%] text-lg  text-start"
+          className="w-[100%] lg:max-w-[70%] text-center sm:text-start"
           variants={infoVariants}
           animate={inView ? "visible" : "hidden"}
         >
@@ -89,7 +89,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="w-80 relative"
+          className="w-80 relative object-cover rounded-lg overflow-hidden"
           variants={imgVariants}
           animate={inView ? "visible" : "hidden"}
         >

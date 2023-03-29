@@ -78,7 +78,7 @@ const Contact = () => {
         onSubmit={handleSubmit}
         className="w-full max-w-4xl flex flex-col gap-6 my-auto"
       >
-        <div className="flex gap-6">
+        <div className="flex gap-6 flex-col sm:flex-row">
           <input
             type="text"
             name="name"
@@ -132,10 +132,10 @@ const Contact = () => {
           </>
         )}
 
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center">
           <button
             type="submit"
-            className="border-2 border-accent hover:bg-secondary p-4 text-xl font-semibold rounded-xl w-56 duration-200 hover:drop-shadow-2xl"
+            className="border-2 border-accent hover:bg-secondary p-2 sm:p-4 text-lg sm:text-xl font-semibold rounded-xl w-40 sm:w-56 duration-200 hover:drop-shadow-2xl"
           >
             Send Message
           </button>

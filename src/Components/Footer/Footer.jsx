@@ -19,7 +19,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <p className="text-sm">
+      <p className="text-sm text-center">
         Copyright © Syed Ismailuddin 2021 All Rights Reserved
       </p>
     </section>

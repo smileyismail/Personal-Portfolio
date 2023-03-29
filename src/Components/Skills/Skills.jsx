@@ -19,7 +19,7 @@ const Skills = () => {
       <div className="w-full my-auto">
         <div
           ref={ref}
-          className="grid justify-center items-center flex-wrap grid-cols-2 gap-10"
+          className="grid justify-center items-center flex-wrap grid-cols-2 gap-6 sm:gap-10"
         >
           {skills.map((skill) => (
             <div key={skill.id}>
