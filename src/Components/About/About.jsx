@@ -89,7 +89,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="w-80 relative object-cover rounded-lg overflow-hidden"
+          className="w-full max-w-xs relative object-cover rounded-lg overflow-hidden"
           variants={imgVariants}
           animate={inView ? "visible" : "hidden"}
         >

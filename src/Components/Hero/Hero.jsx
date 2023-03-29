@@ -7,10 +7,10 @@ import heroPic from "../../assets/heroPic.gif";
 const Hero = () => {
   return (
     <section id="home" className="section">
-      <div className="flex justify-between sm:flex-row flex-col-reverse items-center my-auto">
-        <div className="w-full flex justify-center items-center sm:items-start flex-col gap-6">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center sm:items-start gap-7">
           <motion.h3
-            className="text-5xl"
+            className="text-4xl sm:text-5xl"
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0, duration: 0.5 }}
@@ -18,7 +18,7 @@ const Hero = () => {
             Hello World,
           </motion.h3>
           <motion.h4
-            className="text-2xl"
+            className="text-xl sm:text-2xl"
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
@@ -34,14 +34,14 @@ const Hero = () => {
             Syed Ismailuddin.
           </motion.h1>
           <motion.h2
-            className="text-xl"
+            className="text-md sm:text-lg"
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.5 }}
           >
             I Write Code for Internet.
           </motion.h2>
-          <p className="text-lg">
+          <p className="text-md sm:text-lg text-center sm:text-start">
             Front-End Developer with a strong Foundation in Technology and
             Frameworks of today's Standards like
             <span className="text-accent">React</span>,
@@ -50,6 +50,10 @@ const Hero = () => {
             detail and Focusing on
             <span className="text-accent"> mobile-first development</span>.
           </p>
+
+          <div className="w-screen flex justify-center items-start md:hidden max-h-[40vh]  overflow-hidden px-[20%]">
+            <img src={heroPic} alt="HeroAvatar" className="w-3/4" />
+          </div>
 
           <div className="flex gap-2">
             <a href={Resume} download>
@@ -66,12 +70,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-[24rem] h-[24rem] sm:w-full sm:h-full border-2 border-red-500 flex justify-start items-start overflow-hidden">
-          <img
-            src={heroPic}
-            alt="hero"
-            className="w-full h-full object-cover object-top"
-          />
+        <div className="hidden md:block h-[40vh] md:h-auto overflow-hidden">
+          <img src={heroPic} alt="HeroAvatar" className="w-10/12" />
         </div>
       </div>
     </section>
