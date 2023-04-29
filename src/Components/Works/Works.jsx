@@ -98,7 +98,7 @@ const Works = () => {
             </div>
             <div className="whitespace-pre">
               <h2 className="text-2xl sm:text-3xl font-semibold mb-1">
-                V Cube Solutions
+                V Cube Software Solutions
               </h2>
               <h5 className="text-md sm:text-lg">
                 Front-End Developer (Contract)
