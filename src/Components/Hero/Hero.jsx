@@ -52,9 +52,9 @@ const Hero = () => {
           <p className="text-md sm:text-lg text-center md:text-start">
             Front-End Developer with a strong Foundation in Technology and
             Frameworks of today's Standards like{" "}
-            <span className="text-accent">React.JS</span>,
-            <span className="text-accent">Next.JS</span>,
-            <span className="text-accent">Redux</span>,
+            <span className="text-accent">React.JS</span>,{" "}
+            <span className="text-accent">Next.JS</span>,{" "}
+            <span className="text-accent">Redux</span>,{" "}
             <span className="text-accent"> JavaScript</span>, etc. I heartily
             enjoy Building websites and web applications with attention to
             detail and Focusing on
