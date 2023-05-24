@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This website provides details and ratings of the movies, with new, popular, trending and top-rated films constantly updated through a connection to an API.
+This is my Personal website where you can find more details me and my work's.
 
 ## Demo
 
