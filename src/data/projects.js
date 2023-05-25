@@ -94,7 +94,7 @@ const projects = [
       "Many small Design projects that showcase visually stunning user interfaces, such as simple animations, Text Effects, etc...",
     toolsUsed: "HTML, CSS, JavaScript",
     icon: <CgIfDesign />,
-    githubLink: "https://github.com/smileyismail/Design-Projectsy",
+    githubLink: "https://github.com/smileyismail/Design-Projects",
     liveLink: "https://design-projects.netlify.app/",
   },
 
