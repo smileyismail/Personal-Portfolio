@@ -50,12 +50,19 @@ const Hero = () => {
             I Write Code for Internet.
           </motion.h2>
           <p className="text-md sm:text-lg text-center md:text-start">
-            Front-End Developer with a strong Foundation in Technology and
-            Frameworks of today's Standards like{" "}
-            <span className="text-accent">React.JS</span>,{" "}
+            <span className="text-accent font-semibold">
+              Full-Stack Developer
+            </span>{" "}
+            and{" "}
+            <span className="text-accent font-semibold">
+              Mobile App Development
+            </span>{" "}
+            with a strong Foundation in Technology and Frameworks of today's
+            Standards like <span className="text-accent">React.JS</span>,{" "}
+            <span className="text-accent">React Native</span>,{" "}
             <span className="text-accent">Next.JS</span>,{" "}
             <span className="text-accent">Redux</span>,{" "}
-            <span className="text-accent"> JavaScript</span>, etc. I heartily
+            <span className="text-accent"> MERN Stack</span>, etc. I heartily
             enjoy Building websites and web applications with attention to
             detail and Focusing on
             <span className="text-accent"> mobile-first development</span>.

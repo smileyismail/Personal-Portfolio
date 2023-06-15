@@ -37,54 +37,55 @@ const About = () => {
           <p>
             Howdy, I am Syed Ismailuddin I'm a{" "}
             <span className="text-accent font-semibold">
-              Front-End Developer{" "}
+              Full-Stack Developer{" "}
+            </span>
+            and a
+            <span className="text-accent font-semibold">
+              {" "}
+              Mobile App Developer{" "}
             </span>
             Living in Hyderabad, India. I describe myself as a passionate
-            developer who loves Coding and building websites. I have a proven
-            ability to collaborate effectively with senior developers while
-            spending extra time to be{" "}
-            <span className="text-accent font-semibold">mentored</span>.
+            developer who loves Coding and building websites. Demonstrating my
+            commitment to growth and learning, I have a proven ability to
+            collaborate effectively with other developers while actively seeking
+            <span className="text-accent font-semibold"> mentoring</span>.
+            opportunities.{" "}
           </p>
           <br />
           <p>
-            My interest in web development started back in 2018 when I saw my
-            seniors personal website which inspired me to create my own website
-            so I started learning{" "}
-            <span className="text-accent font-semibold">HTML</span>,{" "}
-            <span className="text-accent font-semibold">CSS</span> -- turns out
-            I was enjoying it and my eager to learn web development grew!
+            My passion for web development ignited in 2018 when I encountered my
+            senior's personal website, which inspired me to create my own. I
+            began learning{" "}
+            <span className="text-accent font-semibold">HTML</span> and
+            <span className="text-accent font-semibold"> CSS</span>, quickly
+            discovering my enjoyment and deepening my interest in web
+            development. -- turns out I was enjoying it and my eager to learn
+            web development grew!
           </p>
           <br />
           <p>
-            I learned the web development technologies through different sources
-            such as Bootcamps, Institutes, Online Courses, etc. Mostly I learned
-            from online courses provided by platforms such as Udemy,
-            freeCodeCamp, GFG, coding ninjas, YouTube, etc.
+            I acquired knowledge of web development technologies through various
+            channels such as bootcamps, institutes, and online courses. Notably,
+            I extensively utilized platforms like Udemy, freeCodeCamp, GFG,
+            coding ninjas, and YouTube to expand my skills.
           </p>
           <p>
             <br />
-            Fast-forward to today I have done my graduation in
+            Fast forward to today, I pursued a specialization in{" "}
             <span className="text-accent font-semibold">
-              {" "}
-              Computer Science Engineering
+              Web Development
             </span>{" "}
-            with a specialization in web development. I also build and worked on
-            many real-time projects with{" "}
+            during my Computer Science Engineering graduation. Additionally, I
+            explored{" "}
             <span className="text-accent font-semibold">
-              CRUD operations
+              Full-Stack Development
             </span>{" "}
-            and also Using{" "}
-            <span className="text-accent font-semibold">API's</span>. I have a
-            strong base in Technologies such as{" "}
-            <span className="text-accent font-semibold">React</span>,
-            <span className="text-accent font-semibold"> JavaScript</span>, etc.
-            I am also learning Back-end development and looking forward to being
-            a
+            as well as{" "}
             <span className="text-accent font-semibold">
-              {" "}
-              Full Stack Developer
-            </span>
-            .
+              Mobile App Development
+            </span>{" "}
+            and successfully built several applications for both Android and
+            iOS.
           </p>
         </motion.div>
 

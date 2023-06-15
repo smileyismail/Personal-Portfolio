@@ -6,8 +6,19 @@ import { RiNewspaperLine } from "react-icons/ri";
 import { BsCart4 } from "react-icons/bs";
 import { CgMenuGridR } from "react-icons/cg";
 import { SiJavascript } from "react-icons/si";
+import { MdTaskAlt } from "react-icons/md";
 
 const projects = [
+  {
+    id: 0,
+    title: "TodoPro",
+    description:
+      "A Full-Stack website designed to help users effectively manage their tasks and track their goals.",
+    toolsUsed: "React, Firebase, Node.js/Express.js, MongoDB",
+    icon: <MdTaskAlt />,
+    githubLink: "https://github.com/smileyismail/TodoPro-web",
+    liveLink: "https://todopro-web.netlify.app/",
+  },
   {
     id: 1,
     title: "Pennywise",
